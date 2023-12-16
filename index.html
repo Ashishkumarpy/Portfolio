@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ashish Kumar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ashish Kumar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile/hi.png" alt="profile_pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">I'm </p>
+            <h1 class="title">Ashish Kumar</h1>
+            <p class="section_text_p2">Software Engineer </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick ="window.open('./assets/resume-example.pdf')"
+                >Download CV</button>
+
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'"
+                >Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="linkedin" 
+                class="social-icon"
+                onclick="window.open('https://www.linkedin.com/in/ashish-kumarff/')"/>
+
+                <img src="./assets/github.png" alt="github" 
+                class="social-icon"
+                onclick="window.open('https://github.com/Ashishkumarpy')"/>
+
+        
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="line" class="icon arrow"
+        onclick="location.href='./#about'"/>
+    </section>
+    
+    <section id="about">
+        <p class="section_text_p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/profile/studying.png" 
+                alt="profile-pic"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="education"
+                        class="icon" 
+                        />
+                        <h3>Education</h3>
+                        <p> B.Tech Bachelors of Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I completed my Bachelor of Technology in Computer Science and Engineering from Aurora’s Scientific Technological and Research Academy, graduating in December 2022 with a CGPA of 6.27. Prior to that, I excelled in my intermediate education at Narayana Junior College, achieving a CGPA of 7.1 from July 2016 to May 2018. My academic journey began at Shrung Rishi High School, where I completed my secondary education in June 2016 with a CGPA of 8.5. These stepping stones have fueled my passion for technology and fostered a solid foundation for continuous growth in the field.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="line" class="icon arrow"
+        onclick="location.href='./#skills'"/>
+    </section>
+    <section id="skills">
+        <p class="section_text_p1"> Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="skills-sub-title"> FrontEnd Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                            <div>
+                                <h3>Javascript</h3>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title"> BackEnd Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                            <div>
+                                <h3>C++</h3>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                            <div>
+                                <h3>MySQL</h3>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                            <div>
+                                <h3>Django</h3>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="line" class="icon arrow"
+        onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Snake.png"
+                        alt="project-1"
+                        class="project-img"/>
+                    </div>
+                    <h2 class="skills-sub-title project-title">Snake Game</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Ashishkumarpy/Snake-Game'">
+                    GitHub</button>
+                    <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://ashishkumarpy.github.io/Snake-Game/'">
+                    Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Wallaper.png"
+                        alt="project-2"
+                        class="project-img"/>
+                    </div>
+                    <h2 class="skills-sub-title project-title">Weather App</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Ashishkumarpy/Weather'">
+                    GitHub</button>
+                    <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://ashishkumarpy.github.io/Weather/'">
+                    Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png"
+                        alt="project-3"
+                        class="project-img"/>
+                    </div>
+                    <h2 class="skills-sub-title project-title">Ecommerce Website</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://www.github.com/'">
+                    GitHub</button>
+                    <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://www.github.com/'">
+                    Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="line" class="icon arrow"
+        onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="phone" 
+                class="icon contact-icon"
+                class="social-icon"
+                onclick="window.open('mailto:examplemail@gmail.com')"/>
+                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn" 
+                class="icon contact-icon"
+                class="social-icon"
+                onclick="window.open('https://www.linkedin.com/in/ashish-kumarff/')"/>
+                <p><a href="https://www.linkedin.com/in/ashish-kumarff/">LinkedIn</a></p>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+            </div>
+        </nav>
+        <p> Copyright &#169; 2023 Ashish Kumar. All Rights Reserved.</p>
+    </footer>
+   </body>
+   <script src="main.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</html>
+ 
